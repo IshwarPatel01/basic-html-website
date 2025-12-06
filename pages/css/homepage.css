@@ -1,0 +1,289 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+
+.navbar{
+
+  padding: 20px;
+}
+
+.logo{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.navbar-links ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar-links ul {
+   list-style-type: none;
+
+}
+
+.navbar-links a{
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+}
+
+.navbar-links a:hover{
+    color: blue;
+}
+
+.role-section{
+    /* margin-top: px; */
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+.role{
+    font-size: 30px;
+    
+}
+
+.role-subheading{
+    font-size: 20px;
+    margin-top: 4px;
+    
+}
+
+.header{
+    border-bottom: 2px solid black;
+}
+#project-list{
+    border-bottom: 2px solid black;
+}
+
+#projects-heading ,#work-experience-heading, #education-heading, #review-heading{
+    padding: 10px;
+    text-align: center;
+    font-size: 28px;
+}
+
+
+
+#project-list li{
+    text-align: center;
+    border: 2px solid black;
+    /* display: inline-block; */
+    width: fit-content;
+    margin: 16px auto;
+    list-style: none;
+    padding: 10px 40px;
+    border-radius: 50px;
+}
+
+.work-experience{
+    border-bottom: 2px solid black;
+}  
+
+/* #work-experience-heading{
+    padding: 10px;
+    text-align: center;
+    font-size: 28px;
+    
+} */
+
+#work-experience-info li{
+    padding: 20px;
+    list-style: none;
+    border: 2px solid black;
+    margin: 10px auto;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 100px;
+
+}
+
+
+    
+
+#work-experience-info  a{
+    color: black;
+    text-decoration: none;
+    font-size: 16px;   
+
+}
+
+#work-experience-info a:hover{
+    text-decoration: underline;
+}
+
+
+#education-info p{
+font-size: 18px;
+font-weight: 500;
+padding: 0 10px 10px 10px;
+}
+
+.main-info{
+    text-align: center;
+}
+
+#education-info ul{
+    padding: 0 20px 20px 20px;
+    list-style: lower-alpha;
+    /* text-decoration: ; */
+}
+
+
+.education {
+    border-bottom: 2px solid black;
+}
+
+.review{
+    border-bottom: 2px solid black;
+}
+
+#review-info ul li {
+    width: fit-content;
+    border-radius: 100px ;
+    /* margin: auto; */
+    margin: 10px 20px;
+    text-align: center;
+    border: 2px solid black;
+    list-style: none;
+}
+
+
+#review-info .review-text{
+    /* margin: auto; */
+    padding: 24px;
+    font-weight: bolder;
+    /* width: fit-content; */
+    
+}
+
+.review-giver p{
+    /* padding:  0  0 0 0  ; */
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+
+
+
+footer{
+    text-align: center;
+    padding:  10px 0;
+
+}
+
+
+
+/* Simple way to remember:
+
+min-width grows up (mobile → tablet → desktop).
+
+max-width shrinks down (desktop → tablet → mobile). */
+
+
+
+/* media query for tablet */
+@media (min-width: 768px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+
+.logo{
+    margin-bottom: 0;
+    font-size: 48px;
+}
+
+.navbar-links ul{
+    display: flex;
+    gap: 10px;
+}
+
+.navbar-links a{
+    font-size: 24px;
+}
+.role-section{
+    margin-bottom: 26px;
+}
+.role{
+    font-size: 48px;
+}
+
+.role-subheading{
+    font-size: 24px;
+    line-height: 2;
+}
+
+}
+
+@media (min-width: 1024px){
+    .navbar{
+        padding: 50px;
+    }
+    .navbar-links a{
+        font-size: 30px;
+    }
+
+    .logo{
+        font-size: 48px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+/* 
+.navbar{
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 20px;
+}
+.logo{
+    font-size: 32px;
+    cursor: pointer;
+}
+
+.navbar-links ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar-links ul li , .navbar-links ul li a{
+
+text-decoration: none;
+list-style-type: none;
+
+}
+
+.navbar-links ul li a{
+    font-size: 20px;
+    color: black;
+    
+
+}
+.navbar-links a:hover{
+    color: blue;
+}
+ */
+
+
+

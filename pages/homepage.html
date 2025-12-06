@@ -21,44 +21,49 @@
     <!-- Favicon -->
     <link rel="shortcut icon" href="img/jd (1).png" type="image/x-icon">
 
+    <link rel="stylesheet" href="css/homepage.css">
 
 </head>
 <body>
     
     <main>
-        <header class="">
+        <header class="header">
             <nav class="navbar">
                 <div class="logo" role="banner">John Doe</div>
 
                 <div class="navbar-links">
                     <ul>  
-                        <li><a href="homepage.html">Homepage</a></li>
-                        <li><a href="projects.html">Projects</a></li>
-                        <li><a href="articles.html">Articles</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="homepage.html">Homepage</a></li> /
+                        <li><a href="projects.html">Projects</a></li> /
+                        <li><a href="articles.html">Articles</a></li> /
+                        <li><a href="contact.html">Contact</a></li>   
                     </ul>
                 </div>
             </nav>
 
-            <h1 class="role">Frontend Developer</h1>
-            <p class="role-subheading">HTML only with proper layout only</p>
+           <div class="role-section">
+             <h1 class="role">Frontend Developer</h1>
+            <p class="role-subheading">HTML, CSS, JS, REACT, NEXT.JS</p>
+           </div>
         </header>
 
         <section class="projects" aria-labelledby="projects-heading">
             <h2 id="projects-heading">Projects</h2>
-            <ul>
-                <li>HTML Only Portfolio</li>
-                <li>Calculator</li>
+           <div id="project-list">
+             <ul>
                 <li>Quiz App</li>
+                <li>Calculator</li>
                 <li>Countdown Timer</li>
+                <li>HTML Only Portfolio</li>
                 <li>Product Upcoming Page</li>
             </ul>
+           </div>
         </section>
 
         <section class="work-experience" aria-labelledby="work-experience-heading">
         <h2 id="work-experience-heading">Work Experience</h2>
         
-        <article>
+        <article id="work-experience-info">
             <ul>
                 <li>
                      <h3>roadmap.sh</h3>
@@ -66,7 +71,7 @@
                     <a href="https://github.com">Visit my Profile </a>
         
                 </li>
-                <li>
+                <li >
                     <h3>OpenSource Work</h3>
                     <p>Contributed to 50 OpenSource projects. Made my own Projects with 200 github Stars.</p>
                     <a href="https://github.com">Visit my Github Profile</a>
@@ -77,15 +82,15 @@
 
            <section class="education" aria-labelledby="education-heading">
            <h2 id="education-heading">Education</h2>
-           <article>
+           <article id="education-info">
             <p>Graduate with 3.76 out of 4 CGPA. Won Acme Hackathon.
-                <br>
-                Organized 30 sessions.
             </p>
+                <p class="main-info">Organized 30 sessions.</p>
+                
     
 
+                <p>Courses i took:</p>
             <ul>
-               <p>Courses i took:</p>
                 <li>Object Oriented Programming</li>
                 <li>Data Structure and Algorithm</li>
                 <li>Web Engineering</li>
@@ -101,24 +106,30 @@
 
         <section class="review" aria-labelledby="review-heading">
             <h2 id="review-heading">Reviews From my Teachers</h2>
-           <article>
+           <article id="review-info">
             <ul>
                 <li>
-                    <p>John doe was a brilliant student; alwyas stood out with his assignments</p>
-                    <p>Jane Die</p>
-                    <p>Assistant Professor</p>
-                </li>
+                    <p class="review-text">John doe was a brilliant student; alwyas stood out with his assignments</p>
+                     <div class="review-giver">
+
+                         <p class="review-giver-name">Jane Die - Assistant Professor</p>
+                         
+                        </li>
+                    </div>
                 <li>
-                    <p>John doe was a brilliant student; always stood out with his assignments</p>
-                    <p>jane doe </p>
-                    <p>Assistant Professor</p>
+                    <p class="review-text">John doe was a brilliant student; always stood out with his assignments</p>
+                  <div class="review-giver">
+                      <p  class="review-giver-name">jane doe - Assistant Professor</p>
+                  </div>
 
                 </li>
                 <li>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore, assumenda?</p>
-                     <p>jane doe </p>
-                    <p>Assistant Professor</p>
-                </li>
+                    <p class="review-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore, assumenda?</p>
+                      <div class="review-giver">
+                          
+                          <p class="review-giver-name">jane doe - Assistant Professor</p>
+                        </div>
+                        </li>
                     
             </ul>
            </article>
@@ -128,8 +139,8 @@
         </section>
         
     <footer>
-    <p>&copy; 2025 John Doe. All rights reserved.</p>
-    <p><time datetime="2025">2025</time></p>
+    <p>&copy; <time datetime="2025">2025</time> John Doe. All rights reserved.</p>
+    <p></p>
 </footer>
 
     </main>
